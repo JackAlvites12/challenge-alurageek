@@ -7,7 +7,7 @@ export const Footer = () => {
 
         <div className="footer__content">
             <figure className="header__figure">
-                <img src="/assets/hearths.svg" alt="hearths" />
+                <img src="/challenge-alurageek/assets/hearths.svg" alt="hearths" />
             </figure>
 
             <h3 className="footer__title">AluraGeek</h3>
