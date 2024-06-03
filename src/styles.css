@@ -1,0 +1,266 @@
+:root{
+  --color-white: white;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+
+}
+
+body{
+  font-family: "Press Start 2P", system-ui;
+  min-height: 100vh;
+  min-width: 375px;
+  position: relative;
+  padding-bottom: 140px;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: var(--color-white);
+  text-align: center;
+  background: rgba(83, 0, 200, 1);
+  box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.header__title{
+  letter-spacing: 2px;
+}
+
+.products{
+  margin: 0 auto;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
+
+
+.products__form__title{
+  padding: 40px 0px;
+
+}
+
+.products__form__inputs{
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.products__form__inputs > input{
+  width: 100%;
+  max-width: 350px;
+  outline: none;
+  border-radius: 20px;
+  border: 2px solid #03318c;
+  padding: 10px;
+}
+
+.products__form__inputs > input::placeholder{
+  color: rgba(3, 49, 140, 1);
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+}
+
+.products__form__botones{
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 15px;
+}
+
+.products__form__botones > button{
+  font-family: "IBM Plex Mono", monospace;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+
+.boton__enviar{
+  cursor: pointer;
+  border: none;
+  color: var(--color-white);
+  background: rgba(3, 49, 140, 1);
+}
+
+.boton__limpiar{
+  cursor: pointer;
+  border: 2px solid rgba(3, 49, 140, 1);;
+}
+
+i{
+  cursor: pointer;
+}
+
+/*  */
+
+.container{
+  padding-bottom: 60px;
+}
+
+.products__list__title{
+  padding: 25px 0px;
+}
+
+.products__list{
+  overflow: auto;
+  height: 500px;
+  font-family: "IBM Plex Mono", monospace;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.products__list::-webkit-scrollbar{
+  width: 15px;
+}
+
+.products__list::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color de la pista */
+  border-radius: 10px;
+}
+
+.products__list::-webkit-scrollbar-thumb {
+  background-color: #a0c4ff; /* Color del pulgar */
+  border-radius: 10px;
+  border: 3px solid #f1f1f1; /* Añadir espacio alrededor del pulgar */
+}
+
+.products__list__item{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 150px;
+  height: 240px;
+  color: var(--color-white);
+  background: rgba(93, 4, 217, 1);
+  padding: 8px;
+  border-radius: 10px;
+  border: 3px solid #000;
+}
+
+.list__item__figure{
+  display: flex;
+}
+
+.list__item__img{
+  object-fit: cover;
+  width: 130px;
+  height: 130px;
+  border: 3px solid #000;
+  border-radius: 10px;
+
+}
+
+.list__item__content__title{
+  text-wrap: balance;
+  font-weight: 100;
+  font-size: 14px;
+  padding: 10px 0px;
+}
+
+.list__item__content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list__item__content__price{
+  font-weight: 600;
+}
+
+.list__item__content__price, .bxs-trash{
+  padding: 0px 10px;
+}
+
+.footer{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 20px;
+  text-align: center;
+  color: var(--color-white);
+  background: rgba(83, 0, 200, 1);
+}
+
+.footer__content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__references{
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.footer__references__actor{
+  padding-bottom: 10px;
+}
+
+.footer__references > *{
+  font-weight: 100;
+}
+
+/* EXTRA ALERT */
+
+.custom-swal-title {
+    font-family: "IBM Plex Mono", monospace;
+
+}
+
+.custom-swal-content {
+    font-family: "IBM Plex Mono", monospace;
+
+}
+
+.custom-swal-button {
+    font-family: "IBM Plex Mono", monospace;
+
+}
+
+.no-products{
+  padding-top: 120px;
+}
+
+/*  */
+
+@media ( width > 1050px){
+
+    .products{
+      padding: 50px 0px;
+      max-width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .container{
+      width: 50%;
+      order: 1;
+    }
+
+    .products__form{
+      order: 2;
+    }
+
+    .products__list{
+      padding: 20px;
+      height: 490px;
+      overflow: auto;
+      border-radius: 15px;
+      box-shadow: -16px 16px 15px 0px rgba(0, 0, 0, 0.25);
+    }
+
+
+}
+
+
